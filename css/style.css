@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+     background-color:#7f7f90;
+}
+.navbar-logo a{
+    text-decoration: none;
+    color: black;
+    font-weight: 60px;
+    font-size: 25px;
+}
+
+.navmenu{
+    list-style: none;
+    display: flex;
+    gap:32px;
+}
+
+
+.navmenu  li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 50px;
+    font-size: 20px;
+}
+ .navmenu li a:hover{
+   color: rgb(197, 23, 23);
+
+
+ }
+ .layers{
+    display: none;
+    flex-direction: column;
+    gap:5px;
+    cursor: pointer;
+ }
+ .layers span{
+    width:30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+ }
+ .container{
+    width: 80%;
+    margin: auto;
+ }
+
+
+  /*home section*/
+
+ .home
+{
+    padding-top: 20px;
+background-color:rgb(238, 238, 238);
+}
+
+.home-content img{
+    width: 300px;
+    height:300px;
+    text-align: center;
+}
+.home-content{
+text-align: center;
+padding-bottom: 10px;
+}
+.home .home-content p
+{
+    text-wrap:pretty ;
+    margin-block: 20px;
+    line-height: 1.6;
+    font-size: 40px;
+    color: #4f4f5a;
+}
+
+.home .home-content h2{
+    font-size: 80px;
+    text-wrap: pretty;
+    color:rgb(6, 7, 8);
+    padding-top: 30px;
+}
+
+
+.btns .button1
+{
+    color: #fff;
+    background-color: rgb(230, 20, 20);
+border:1px solid transparent;
+border-radius: 50px;
+
+font-size: 20px;
+padding: 10px 25px ;
+text-align: center;
+
+} 
+.btns .button1:hover{
+    background-color:green;
+}
+
+     /*chefs*/
+.section-title
+  {text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  
+.section-title h3{
+color: #7f7f90;
+text-align: center;
+font-size: 25px;
+}
+
+.section-title p
+{
+text-align: center;
+color:black;
+font-size: 40px;
+font-weight: 500;;
+}
+.section-title span
+{
+color:rgb(206, 18, 19);
+}
+
+
+.chefs-content  .chefs-card1 .inner{
+text-align: center;
+box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+transition: transform 1s;
+padding-bottom: 70px;
+position: relative;
+
+}
+.inner{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.inner .img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.inner:hover
+{
+    
+transform: scale(1.1);
+transform: translateX(50);
+
+
+}
+/* gallery*/
+
+.gallery-card img
+{
+width: 500px;
+height: 400px;
+
+}
+.gallery-content{
+    text-align: center;
+}
+.gallery-card{
+    position: relative;
+    overflow: hidden;
+    
+}
+.gallery{
+    background-color:rgb(238, 238, 238);
+}
+
+
+/*form-section*/
+.part1{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.part2{
+    margin: auto;
+    text-align: center;
+}
+.last-button{
+    text-align: center;
+    background-color:  rgb(230, 20, 20);
+    border-radius: 5px;
+
+
+}
+  
+.last-button:hover{
+    background-color: green;
+}
+
+
+.last-section{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 5px;
+    margin-top: 20px;
+}
+  @media (max-width:768px){
+    .navmenu{
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        background-color: aqua;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        display: none;
+    }
+    .layers{
+        display: flex;
+     }
+     .navmenu.active{
+        display: flex;
+     }
+
+     
+}
+ 
